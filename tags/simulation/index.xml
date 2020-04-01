@@ -6,10 +6,20 @@
     <description>Recent content in simulation on StatLab Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/simulation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Simulating Data for Count Models</title>
+      <link>/2019/08/29/simulating-data-for-count-models/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/08/29/simulating-data-for-count-models/</guid>
+      <description>A count model is a linear model where the dependent variable is a count. For example, the number of times a car breaks down, the number of rats in a litter, the number of times a young student gets out of his seat, etc. Counts are either 0 or a postive whole number, which means we need to use special distributions to generate the data.
+The Poisson DistributionThe most common count distribution is the Poisson distribution.</description>
+    </item>
     
     <item>
       <title>Simulating a Logistic Regression Model</title>
@@ -18,6 +28,28 @@
       
       <guid>/2019/05/04/simulating-a-logistic-regression-model/</guid>
       <description>Logistic regression is a method for modeling binary data as a function of other variables. For example we might want to model the occurrence or non-occurrence of a disease given predictors such as age, race, weight, etc. The result is a model that returns a predicted probability of occurrence (or non-occurrence, depending on how we set up our data) given certain values of our predictors. We might also be able to interpret the coefficients in our model to summarize how a change in one predictor affects the odds of occurrence.</description>
+    </item>
+    
+    <item>
+      <title>Is R-squared Useless?</title>
+      <link>/2015/10/17/is-r-squared-useless/</link>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/10/17/is-r-squared-useless/</guid>
+      <description>On Thursday, October 16, 2015, a disbelieving student posted on Reddit My stats professor just went on a rant about how R-squared values are essentially useless, is there any truth to this? It attracted a fair amount of attention, at least compared to other posts about statistics on Reddit.
+It turns out the student’s stats professor was Cosma Shalizi of Carnegie Mellon University. Shalizi provides free and open access to his class lecture materials so we can see what exactly he was “ranting” about.</description>
+    </item>
+    
+    <item>
+      <title>Simulating Endogeneity</title>
+      <link>/2015/09/10/simulating-endogeneity/</link>
+      <pubDate>Thu, 10 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/10/simulating-endogeneity/</guid>
+      <description>First off, what is endogeneity, and why would we want to simulate it?
+Endogeneity occurs when a statistical model has an independent variable that is correlated with the error term. The reason we would want to simulate it is to understand what exactly that definition means!
+Let’s first simulate ideal data for simple linear regression using R.
+# independent variablex &amp;lt;- seq(1,5,length.out = 100) # error (uncorrelated with x)set.</description>
     </item>
     
   </channel>

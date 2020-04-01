@@ -6,10 +6,38 @@
     <description>Recent content in R on StatLab Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating a SQLite database for use with R</title>
+      <link>/2020/03/05/creating-a-sqlite-database-for-use-with-r/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/05/creating-a-sqlite-database-for-use-with-r/</guid>
+      <description>When you import or load data into R, the data are stored in Random Access Memory (RAM). This is the memory that is deleted when you close R or shut off your computer. It’s very fast but temporary. If you save your data, it is saved to your hard drive. But when you open R again and load the data, once again it is loaded into RAM. While many newer computers come with lots of RAM (such as 16 GB), it’s not an infinite amount.</description>
+    </item>
+    
+    <item>
+      <title>Simulating Data for Count Models</title>
+      <link>/2019/08/29/simulating-data-for-count-models/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/08/29/simulating-data-for-count-models/</guid>
+      <description>A count model is a linear model where the dependent variable is a count. For example, the number of times a car breaks down, the number of rats in a litter, the number of times a young student gets out of his seat, etc. Counts are either 0 or a postive whole number, which means we need to use special distributions to generate the data.
+The Poisson DistributionThe most common count distribution is the Poisson distribution.</description>
+    </item>
+    
+    <item>
+      <title>Reading PDF files into R for text mining</title>
+      <link>/2019/05/14/reading-pdf-files-into-r-for-text-mining/</link>
+      <pubDate>Tue, 14 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/14/reading-pdf-files-into-r-for-text-mining/</guid>
+      <description>Let’s say we’re interested in text mining the opinions of The Supreme Court of the United States from the 2014 term. The opinions are published as PDF files at the following web page http://www.supremecourt.gov/opinions/slipopinion/14. We would probably want to look at all 76 opinions, but for the purposes of this introductory tutorial we’ll just look at the last three of the term: (1) Glossip v. Gross, (2) State Legislature v.</description>
+    </item>
     
     <item>
       <title>Simulating a Logistic Regression Model</title>
@@ -37,6 +65,64 @@ Part One: Why Twitter Data?To begin, we should ask: why would someone be intere
       
       <guid>/2019/05/01/getting-started-with-multiple-imputation-in-r/</guid>
       <description>Whenever we are dealing with a dataset, we almost always run into a problem that may decrease our confidence in the results that we are getting - missing data! Examples of missing data can be found in surveys - where respondents intentionally refrained from answering a question, didn’t answer a question because it is not applicable to them, or simply forgot to give an answer. Or our dataset on trade in agricultural products for country-pairs over years could suffer from missing data as some countries fail to report their accounts for certain years.</description>
+    </item>
+    
+    <item>
+      <title>Analysis of Ours to Shape Comments, Part 5</title>
+      <link>/2019/01/31/analysis-of-ours-to-shape-comments-part-5/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/01/31/analysis-of-ours-to-shape-comments-part-5/</guid>
+      <description>IntroductionIn the penultimate post of this series, we’ll use some unsupervised learning approaches to uncover comment clusters and latent themes among the comments to President Ryan’s Ours to Shape website.
+library(quanteda) # main text packagelibrary(tidyverse) # for dplyr, stringr, piping, etc.library(RColorBrewer) # better colors in graphslibrary(scales) # better breaks and labels in graphslibrary(stm) # structural topic modelsLet’s start with the document-feature matrix we created from the de-duplicated comments.</description>
+    </item>
+    
+    <item>
+      <title>Analysis of Ours to Shape Comments, Part 4</title>
+      <link>/2018/12/19/analysis-of-ours-to-shape-comments-part-4/</link>
+      <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/12/19/analysis-of-ours-to-shape-comments-part-4/</guid>
+      <description>IntroductionIn the fourth installment of this series (we’re almost done, I promise), we’ll look at the sentiment – aka positive/negative tone, polarity, affect – of the comments to President Ryan’s Ours to Shape website.
+We don’t have a pre-labeled set of comments, with negative or positive sentiment already identified, so we can’t use a supervised classification method (and I’m not committed enough to hand code a sample of comments).</description>
+    </item>
+    
+    <item>
+      <title>Analysis of Ours to Shape Comments, Part 3</title>
+      <link>/2018/12/18/analysis-of-ours-to-shape-comments-part-3/</link>
+      <pubDate>Tue, 18 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/12/18/analysis-of-ours-to-shape-comments-part-3/</guid>
+      <description>IntroductionTo recap, we’re exploring the comments submitted to President Ryan’s Ours to Shape website (as of December 7, 2018).
+In the first post we looked at the distribution of comments across Ryan’s three categories – community, discovery, and service – and across the contributors’ primary connection to the university. We extracted features like length and readability of the comments, and compared these across groups. And we explored the context in which key words of interest (to me) were used.</description>
+    </item>
+    
+    <item>
+      <title>Analysis of Ours to Shape Comments, Part 2</title>
+      <link>/2018/12/14/analysis-of-ours-to-shape-comments-part-2/</link>
+      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/12/14/analysis-of-ours-to-shape-comments-part-2/</guid>
+      <description>IntroductionIn the last post, we began exploring the Ours to Shape comments – the distribution across categories and contributors, the length and readability of the comments, and a few key words in context. While I did more exploration of the data than reported, the first post gives a taste of the kind of dive into the data that usefully proceeds analysis.
+In this post, we’ll start digging into word frequencies, relative frequencies by groups, and distinguishing words.</description>
+    </item>
+    
+    <item>
+      <title>Analysis of Ours to Shape Comments, Part 1</title>
+      <link>/2018/12/13/analysis-of-ours-to-shape-comments-part-1/</link>
+      <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/12/13/analysis-of-ours-to-shape-comments-part-1/</guid>
+      <description>IntroductionAs part of a series of workshops on quantitative analysis of text this fall, I started examining the comments submitted to President Ryan’s Ours to Shape website. The site invites people to share their ideas and insights for UVA going forward, particularly in the domains of service, discovery, and community. The website was only one venue for providing suggestions and voicing possibilities – President Ryan has hosted community discussions as well – but the website afforded an opportunity for individuals to chime in multiple times and at their convenience, so in theory should represent an especially inclusive collection.</description>
+    </item>
+    
+    <item>
+      <title>A Beginner’s Guide to Text Analysis with quanteda</title>
+      <link>/2018/11/27/a-beginner-s-guide-to-text-analysis-with-quanteda/</link>
+      <pubDate>Tue, 27 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/11/27/a-beginner-s-guide-to-text-analysis-with-quanteda/</guid>
+      <description>A lot of introductory tutorials to quanteda assume that the reader has some base of knowledge about the program’s functionality or how it might be used. Other tutorials assume that the user is an expert in R and on what goes on under the hood when you’re coding. This introductory guide will assume none of that. Instead, I’m presuming a very basic understanding of R (like how to assign variables) and that you’ve just heard of quanteda for the first time today.</description>
     </item>
     
     <item>
@@ -115,6 +201,240 @@ Before we get started, we should mention the Iteration chapter in R for Data Sci
       <guid>/2017/01/11/working-with-dates-and-time-in-r-using-the-lubridate-package/</guid>
       <description>Sometimes we have data with dates and/or times that we want to manipulate or summarize. A common example in the health sciences is time-in-study. A subject may enter a study on Feb 12, 2008 and exit on November 4, 2009. How many days was the person in the study? (Don’t forget 2008 was a leap year; February had 29 days.) What was the median time-in-study for all subjects?
 Another example are experiments that time participants performing an activity, applies a treatment to certain members, and then re-times the activity.</description>
+    </item>
+    
+    <item>
+      <title>The Wilcoxon Rank Sum Test</title>
+      <link>/2017/01/05/the-wilcoxon-rank-sum-test/</link>
+      <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/01/05/the-wilcoxon-rank-sum-test/</guid>
+      <description>The Wilcoxon Rank Sum Test is often described as the non-parametric version of the two-sample t-test. You sometimes see it in analysis flowcharts after a question such as “is your data normal?” A “no” branch off this question will recommend a Wilcoxon test if you’re comparing two groups of continuous measures.
+So what is this Wilcoxon test? What makes it non-parametric? What does that even mean? And how do we implement it and interpret it?</description>
+    </item>
+    
+    <item>
+      <title>Pairwise comparisons of proportions</title>
+      <link>/2016/10/20/pairwise-comparisons-of-proportions/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/10/20/pairwise-comparisons-of-proportions/</guid>
+      <description>Pairwise comparison means comparing all pairs of something. If I have three items A, B and C, that means comparing A to B, A to C, and B to C. Given n items, I can determine the number of possible pairs using the binomial coefficient:
+\[ \frac{n!}{2!(n - 2)!} = \binom {n}{2}\]
+Using the R statistical computing environment, we can use the choose function to quickly calculate this. For example, how many possible 2-item combinations can I “choose” from 10 items:</description>
+    </item>
+    
+    <item>
+      <title>Getting UN Comtrade Data with R</title>
+      <link>/2016/10/03/getting-un-comtrade-data-with-r/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/10/03/getting-un-comtrade-data-with-r/</guid>
+      <description>The UN Comtrade Database provides free access to global trade data. You can get data by using their data extraction interface or API. In this post, we share some possible ways of downloading, preparing and plotting trade data in R.
+Before running this script, you’ll need to install the rjson package if you haven’t done so before. Make sure your machine is connected to the Internet, and run install.packages(&#34;rjson”) - you only need to do this once.</description>
+    </item>
+    
+    <item>
+      <title>Using Data.gov APIs in R</title>
+      <link>/2016/10/03/using-data-gov-apis-in-r/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/10/03/using-data-gov-apis-in-r/</guid>
+      <description>Data.gov catalogs government data and makes them available on the web; you can find data in a variety of topics such as agriculture, business, climate, education, energy, finance, public safty and many more. It is a good start point for finding data if you don’t already know which particular data source to begin your search, however it can still be time consuming when it comes to actually downloading the raw data you need.</description>
+    </item>
+    
+    <item>
+      <title>Using Census Data API with R</title>
+      <link>/2016/09/29/using-census-data-api-with-r/</link>
+      <pubDate>Thu, 29 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/09/29/using-census-data-api-with-r/</guid>
+      <description>Datasets provided by the US Census Bureau, such as Decennial Census and American Community Survey (ACS), are widely used by many researchers, among others. You can certainly find and download census data from the Census Bureau website, from our licensed data source Social Explorer, or other free sources such as IPUMS-USA, then load the data into one of the statistical packages or other softwares to analyze or present the data.</description>
+    </item>
+    
+    <item>
+      <title>A tidyr Tutorial</title>
+      <link>/2016/08/24/a-tidyr-tutorial/</link>
+      <pubDate>Wed, 24 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/08/24/a-tidyr-tutorial/</guid>
+      <description>The tidyr package by Hadley Wickham centers on two functions: gather and spread. If you have struggled to understand what exactly these two functions do, this tutorial is for you.
+To begin we need to wrap our heads around the idea of “key-value pairs”. The help pages for gather and spread use this terminology to explain how they work. Without some intuition for key-value pairs, it can be difficult to truly understand how these functions work.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Factor Analysis</title>
+      <link>/2016/08/01/getting-started-with-factor-analysis/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/08/01/getting-started-with-factor-analysis/</guid>
+      <description>Take a look at the following correlation matrix for Olympic decathlon data calculated from 280 scores from 1960 through 2004 (Johnson and Wichern, p. 499):
+If we focus on the first row, 100m (100 meter dash), we see that it has fairly high correlations with LJ and 400m (long jump and 400 meter dash, 0.64 and 0.55) and somewhat lower correlations with all other events. Scoring high in the 100 meter dash seems to correlate with scoring high in the long jump and 400 meter run but gives no solid indication of performance in the other events.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to Loglinear Models</title>
+      <link>/2016/07/12/an-introduction-to-loglinear-models/</link>
+      <pubDate>Tue, 12 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/07/12/an-introduction-to-loglinear-models/</guid>
+      <description>Loglinear models model cell counts in contingency tables. They’re a little different from other modeling methods in that they don’t distinguish between response and explanatory variables. All variables in a loglinear model are essentially “responses”.
+To learn more about loglinear models, we’ll explore the following data from Agresti (1996, Table 6.3). It summarizes responses from a survey that asked high school seniors in a particular city whether they had ever used alcohol, cigarettes, or marijuana.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Color Palettes in R</title>
+      <link>/2016/06/10/setting-up-color-palettes-in-r/</link>
+      <pubDate>Fri, 10 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/10/setting-up-color-palettes-in-r/</guid>
+      <description>Plotting with color in R is kind of like painting a room in your house: you have to pick some colors. R has some default colors ready to go, but it’s only natural to want to play around and try some different combinations. In this post we’ll look at some ways you can define new color palettes for plotting in R.
+To begin, let’s use the palette function to see what colors are currently available:</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hurdle Models</title>
+      <link>/2016/06/01/getting-started-with-hurdle-models/</link>
+      <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/06/01/getting-started-with-hurdle-models/</guid>
+      <description>Hurdle Models are a class of models for count data that help handle excess zeros and overdispersion. To motivate their use, let’s look at some data in R.
+The following data come with the AER package. It is a sample of 4,406 individuals, aged 66 and over, who were covered by Medicare in 1988. One of the variables the data provide is number of physician office visits. Let’s say we wish to model the number of vists (a count) by some of the other variables in the data set.</description>
+    </item>
+    
+    <item>
+      <title>Hierarchical Linear Regression</title>
+      <link>/2016/05/20/hierarchical-linear-regression/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/05/20/hierarchical-linear-regression/</guid>
+      <description>This post is NOT about Hierarchical Linear Modeling (HLM; multilevel modeling). The hierarchical regression is model comparison of nested regression models.
+When do I want to perform hierarchical regression analysis?Hierarchical regression is a way to show if variables of your interest explain a statistically significant amount of variance in your Dependent Variable (DV) after accounting for all other variables. This is a framework for model comparison rather than a statistical method.</description>
+    </item>
+    
+    <item>
+      <title>Getting started with Negative Binomial Regression Modeling</title>
+      <link>/2016/05/05/getting-started-with-negative-binomial-regression-modeling/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/05/05/getting-started-with-negative-binomial-regression-modeling/</guid>
+      <description>When it comes to modeling counts (ie, whole numbers greater than or equal to 0), we often start with Poisson regression. This is a generalized linear model where a response is assumed to have a Poisson distribution conditional on a weighted sum of predictors. For example, we might model the number of documented concussions to NFL quarterbacks as a function of snaps played and the total years experience of his offensive line.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing the Effects of Logistic Regression</title>
+      <link>/2016/04/22/visualizing-the-effects-of-logistic-regression/</link>
+      <pubDate>Fri, 22 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/04/22/visualizing-the-effects-of-logistic-regression/</guid>
+      <description>Logistic regression is a popular and effective way of modeling a binary response. For example, we might wonder what influences a person to volunteer, or not volunteer, for psychological research. Some do, some don’t. Are there independent variables that would help explain or distinguish between those who volunteer and those who don’t? Logistic regression gives us a mathematical model that we can we use to estimate the probability of someone volunteering given certain independent variables.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Mediation Analysis</title>
+      <link>/2016/04/18/introduction-to-mediation-analysis/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/04/18/introduction-to-mediation-analysis/</guid>
+      <description>What is mediation?Let’s say previous studies have suggested that higher grades predict higher happiness: X (grades) \(\rightarrow\) Y (happiness). (This research example is made up for illustration purposes. Please don’t consider it a scientific statement.)
+I think, however, grades are not the real reason that happiness increases. I hypothesize that good grades boost one’s self-esteem and then high self-esteem boosts one’s happiness: X (grades) \(\rightarrow\) M (self-esteem) \(\rightarrow\) Y (happiness).</description>
+    </item>
+    
+    <item>
+      <title>Understanding 2-way Interactions</title>
+      <link>/2016/03/25/understanding-2-way-interactions/</link>
+      <pubDate>Fri, 25 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/03/25/understanding-2-way-interactions/</guid>
+      <description>When doing linear modeling or ANOVA it’s useful to examine whether or not the effect of one variable depends on the level of one or more variables. If it does then we have what is called an “interaction”. This means variables combine or interact to affect the response. The simplest type of interaction is the interaction between two two-level categorical variables. Let’s say we have gender (male and female), treatment (yes or no), and a continuous response measure.</description>
+    </item>
+    
+    <item>
+      <title>Comparing Proportions with Relative Risk and Odds Ratios</title>
+      <link>/2016/01/08/comparing-proportions-with-relative-risk-and-odds-ratios/</link>
+      <pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/01/08/comparing-proportions-with-relative-risk-and-odds-ratios/</guid>
+      <description>The classic two-by-two table displays counts of what may be called “successes” and “failures” versus some two-level grouping variable, such as gender (male and female) or treatment (placebo and active drug). An example of one such table is given in the book An Introduction to Categorical Data Analysis (Agresti, 1996, p. 20). The table classifies Myocardial Infarction (yes/no) with Group (Placebo/Aspirin). The data were “taken from a report on the relationship between aspirin use and myocardial infarction (heart attacks) by the Physicians’ Health Study Research Group at Harvard Medical School.</description>
+    </item>
+    
+    <item>
+      <title>Using and Interpreting Cronbach’s Alpha</title>
+      <link>/2015/11/16/using-and-interpreting-cronbach-s-alpha/</link>
+      <pubDate>Mon, 16 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/11/16/using-and-interpreting-cronbach-s-alpha/</guid>
+      <description>I. What is Cronbach’s alpha?Cronbach’s alpha is a measure used to assess the reliability, or internal consistency, of a set of scale or test items. In other words, the reliability of any given measurement refers to the extent to which it is a consistent measure of a concept, and Cronbach’s alpha is one way of measuring the strength of that consistency.
+Cronbach’s alpha is computed by correlating the score for each scale item with the total score for each observation (usually individual survey respondents or test takers), and then comparing that to the variance for all individual item scores:</description>
+    </item>
+    
+    <item>
+      <title>Is R-squared Useless?</title>
+      <link>/2015/10/17/is-r-squared-useless/</link>
+      <pubDate>Sat, 17 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/10/17/is-r-squared-useless/</guid>
+      <description>On Thursday, October 16, 2015, a disbelieving student posted on Reddit My stats professor just went on a rant about how R-squared values are essentially useless, is there any truth to this? It attracted a fair amount of attention, at least compared to other posts about statistics on Reddit.
+It turns out the student’s stats professor was Cosma Shalizi of Carnegie Mellon University. Shalizi provides free and open access to his class lecture materials so we can see what exactly he was “ranting” about.</description>
+    </item>
+    
+    <item>
+      <title>Fitting and Interpreting a Proportional Odds Model</title>
+      <link>/2015/10/05/fitting-and-interpreting-a-proportional-odds-model/</link>
+      <pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/10/05/fitting-and-interpreting-a-proportional-odds-model/</guid>
+      <description>Take a look at the following table. It is a cross tabulation of data taken from the 1991 General Social Survey that relates political party affiliation to political ideology. (Agresti, An Introduction to Categorical Data Analysis, 1996)
+td{padding:0 15px 0 15px;text-align: center;}caption{font-size: 70%}Political Ideology by Party Affiliation, from the 1991 General Social SurveyVery Liberal</description>
+    </item>
+    
+    <item>
+      <title>Understanding Diagnostic Plots for Linear Regression Analysis</title>
+      <link>/2015/09/21/understanding-diagnostic-plots-for-linear-regression-analysis/</link>
+      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/21/understanding-diagnostic-plots-for-linear-regression-analysis/</guid>
+      <description>You ran a linear regression analysis and the stats software spit out a bunch of numbers. The results were significant (or not). You might think that you’re done with analysis. No, not yet. After running a regression analysis, you should check if the model works well for data.
+We can check if a model works well for data in many different ways. We pay great attention to regression results, such as slope coefficients, p-values, or R2 that tell us how well a model represents given data.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Quantile Regression</title>
+      <link>/2015/09/20/getting-started-with-quantile-regression/</link>
+      <pubDate>Sun, 20 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/20/getting-started-with-quantile-regression/</guid>
+      <description>When we think of regression we usually think of linear regression, the tried and true method for estimating a mean of some variable conditional on the levels or values of independent variables. In other words, we’re pretty sure the mean of our variable of interest differs depending on other variables. For example the mean weight of 1st year UVa males is some unknown value. But we could in theory take a random sample and discover there is a relationship between weight and height.</description>
+    </item>
+    
+    <item>
+      <title>Should I always transform my variables to make them normal?</title>
+      <link>/2015/09/14/should-i-always-transform-my-variables-to-make-them-normal/</link>
+      <pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/14/should-i-always-transform-my-variables-to-make-them-normal/</guid>
+      <description>When I first learned data analysis, I always checked normality for each variable and made sure they were normally distributed before running any analyses, such as t-test, ANOVA, or linear regression. I thought normal distribution of variables was the important assumption to proceed to analyses. That’s why stats textbooks show you how to draw histograms and QQ-plots in the beginning of data analysis in the early chapters and see if they’re normally distributed, isn’t it?</description>
+    </item>
+    
+    <item>
+      <title>Simulating Endogeneity</title>
+      <link>/2015/09/10/simulating-endogeneity/</link>
+      <pubDate>Thu, 10 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/10/simulating-endogeneity/</guid>
+      <description>First off, what is endogeneity, and why would we want to simulate it?
+Endogeneity occurs when a statistical model has an independent variable that is correlated with the error term. The reason we would want to simulate it is to understand what exactly that definition means!
+Let’s first simulate ideal data for simple linear regression using R.
+# independent variablex &amp;lt;- seq(1,5,length.out = 100) # error (uncorrelated with x)set.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Q-Q Plots</title>
+      <link>/2015/08/26/understanding-q-q-plots/</link>
+      <pubDate>Wed, 26 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/08/26/understanding-q-q-plots/</guid>
+      <description>The Q-Q plot, or quantile-quantile plot, is a graphical tool to help us assess if a set of data plausibly came from some theoretical distribution such as a Normal or exponential. For example, if we run a statistical analysis that assumes our dependent variable is Normally distributed, we can use a Normal Q-Q plot to check that assumption. It’s just a visual check, not an air-tight proof, so it is somewhat subjective.</description>
     </item>
     
   </channel>

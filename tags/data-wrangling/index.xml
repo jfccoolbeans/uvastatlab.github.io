@@ -6,10 +6,19 @@
     <description>Recent content in data wrangling on StatLab Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/data-wrangling/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating a SQLite database for use with R</title>
+      <link>/2020/03/05/creating-a-sqlite-database-for-use-with-r/</link>
+      <pubDate>Thu, 05 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/2020/03/05/creating-a-sqlite-database-for-use-with-r/</guid>
+      <description>When you import or load data into R, the data are stored in Random Access Memory (RAM). This is the memory that is deleted when you close R or shut off your computer. It’s very fast but temporary. If you save your data, it is saved to your hard drive. But when you open R again and load the data, once again it is loaded into RAM. While many newer computers come with lots of RAM (such as 16 GB), it’s not an infinite amount.</description>
+    </item>
     
     <item>
       <title>An Introduction to Analyzing Twitter Data with R</title>
@@ -39,6 +48,44 @@ Before we get started, we should mention the Iteration chapter in R for Data Sci
       <guid>/2017/01/11/working-with-dates-and-time-in-r-using-the-lubridate-package/</guid>
       <description>Sometimes we have data with dates and/or times that we want to manipulate or summarize. A common example in the health sciences is time-in-study. A subject may enter a study on Feb 12, 2008 and exit on November 4, 2009. How many days was the person in the study? (Don’t forget 2008 was a leap year; February had 29 days.) What was the median time-in-study for all subjects?
 Another example are experiments that time participants performing an activity, applies a treatment to certain members, and then re-times the activity.</description>
+    </item>
+    
+    <item>
+      <title>Getting UN Comtrade Data with R</title>
+      <link>/2016/10/03/getting-un-comtrade-data-with-r/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/10/03/getting-un-comtrade-data-with-r/</guid>
+      <description>The UN Comtrade Database provides free access to global trade data. You can get data by using their data extraction interface or API. In this post, we share some possible ways of downloading, preparing and plotting trade data in R.
+Before running this script, you’ll need to install the rjson package if you haven’t done so before. Make sure your machine is connected to the Internet, and run install.packages(&#34;rjson”) - you only need to do this once.</description>
+    </item>
+    
+    <item>
+      <title>Using Data.gov APIs in R</title>
+      <link>/2016/10/03/using-data-gov-apis-in-r/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/10/03/using-data-gov-apis-in-r/</guid>
+      <description>Data.gov catalogs government data and makes them available on the web; you can find data in a variety of topics such as agriculture, business, climate, education, energy, finance, public safty and many more. It is a good start point for finding data if you don’t already know which particular data source to begin your search, however it can still be time consuming when it comes to actually downloading the raw data you need.</description>
+    </item>
+    
+    <item>
+      <title>Using Census Data API with R</title>
+      <link>/2016/09/29/using-census-data-api-with-r/</link>
+      <pubDate>Thu, 29 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/09/29/using-census-data-api-with-r/</guid>
+      <description>Datasets provided by the US Census Bureau, such as Decennial Census and American Community Survey (ACS), are widely used by many researchers, among others. You can certainly find and download census data from the Census Bureau website, from our licensed data source Social Explorer, or other free sources such as IPUMS-USA, then load the data into one of the statistical packages or other softwares to analyze or present the data.</description>
+    </item>
+    
+    <item>
+      <title>A tidyr Tutorial</title>
+      <link>/2016/08/24/a-tidyr-tutorial/</link>
+      <pubDate>Wed, 24 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/08/24/a-tidyr-tutorial/</guid>
+      <description>The tidyr package by Hadley Wickham centers on two functions: gather and spread. If you have struggled to understand what exactly these two functions do, this tutorial is for you.
+To begin we need to wrap our heads around the idea of “key-value pairs”. The help pages for gather and spread use this terminology to explain how they work. Without some intuition for key-value pairs, it can be difficult to truly understand how these functions work.</description>
     </item>
     
   </channel>

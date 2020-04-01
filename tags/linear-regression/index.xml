@@ -21,5 +21,53 @@
 hist(state.area)After a log transformation, notice the histogram is more or less symmetric.</description>
     </item>
     
+    <item>
+      <title>Hierarchical Linear Regression</title>
+      <link>/2016/05/20/hierarchical-linear-regression/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/05/20/hierarchical-linear-regression/</guid>
+      <description>This post is NOT about Hierarchical Linear Modeling (HLM; multilevel modeling). The hierarchical regression is model comparison of nested regression models.
+When do I want to perform hierarchical regression analysis?Hierarchical regression is a way to show if variables of your interest explain a statistically significant amount of variance in your Dependent Variable (DV) after accounting for all other variables. This is a framework for model comparison rather than a statistical method.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Mediation Analysis</title>
+      <link>/2016/04/18/introduction-to-mediation-analysis/</link>
+      <pubDate>Mon, 18 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/04/18/introduction-to-mediation-analysis/</guid>
+      <description>What is mediation?Let’s say previous studies have suggested that higher grades predict higher happiness: X (grades) \(\rightarrow\) Y (happiness). (This research example is made up for illustration purposes. Please don’t consider it a scientific statement.)
+I think, however, grades are not the real reason that happiness increases. I hypothesize that good grades boost one’s self-esteem and then high self-esteem boosts one’s happiness: X (grades) \(\rightarrow\) M (self-esteem) \(\rightarrow\) Y (happiness).</description>
+    </item>
+    
+    <item>
+      <title>Understanding 2-way Interactions</title>
+      <link>/2016/03/25/understanding-2-way-interactions/</link>
+      <pubDate>Fri, 25 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/2016/03/25/understanding-2-way-interactions/</guid>
+      <description>When doing linear modeling or ANOVA it’s useful to examine whether or not the effect of one variable depends on the level of one or more variables. If it does then we have what is called an “interaction”. This means variables combine or interact to affect the response. The simplest type of interaction is the interaction between two two-level categorical variables. Let’s say we have gender (male and female), treatment (yes or no), and a continuous response measure.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Diagnostic Plots for Linear Regression Analysis</title>
+      <link>/2015/09/21/understanding-diagnostic-plots-for-linear-regression-analysis/</link>
+      <pubDate>Mon, 21 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/21/understanding-diagnostic-plots-for-linear-regression-analysis/</guid>
+      <description>You ran a linear regression analysis and the stats software spit out a bunch of numbers. The results were significant (or not). You might think that you’re done with analysis. No, not yet. After running a regression analysis, you should check if the model works well for data.
+We can check if a model works well for data in many different ways. We pay great attention to regression results, such as slope coefficients, p-values, or R2 that tell us how well a model represents given data.</description>
+    </item>
+    
+    <item>
+      <title>Should I always transform my variables to make them normal?</title>
+      <link>/2015/09/14/should-i-always-transform-my-variables-to-make-them-normal/</link>
+      <pubDate>Mon, 14 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/2015/09/14/should-i-always-transform-my-variables-to-make-them-normal/</guid>
+      <description>When I first learned data analysis, I always checked normality for each variable and made sure they were normally distributed before running any analyses, such as t-test, ANOVA, or linear regression. I thought normal distribution of variables was the important assumption to proceed to analyses. That’s why stats textbooks show you how to draw histograms and QQ-plots in the beginning of data analysis in the early chapters and see if they’re normally distributed, isn’t it?</description>
+    </item>
+    
   </channel>
 </rss>
